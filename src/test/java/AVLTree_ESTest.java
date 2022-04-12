@@ -352,8 +352,7 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
          verifyException("AVLTree", e);
       }
   }
-
- /* @Test(timeout = 4000)
+  @Test(timeout = 4000)
   public void test18()  throws Throwable  {
       AVLTree aVLTree0 = new AVLTree();
       int int0 = 1;
@@ -388,7 +387,7 @@ public class AVLTree_ESTest extends AVLTree_ESTest_scaffolding {
       aVLTree0.getBalance(aVLTree_Node3);
       aVLTree0.height();
       aVLTree0.getRoot();
-  }*/
+  }
 
   @Test(timeout = 4000)
   public void test19()  throws Throwable  {
