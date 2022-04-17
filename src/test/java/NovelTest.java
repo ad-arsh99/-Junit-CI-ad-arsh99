@@ -1,70 +1,47 @@
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-import org.junit.runner.RunWith;
+import static org.junit.Assert.fail;
 
 public class NovelTest {
-  @Test(timeout = 4000)
-  public void test1() throws Throwable {
-    AVLTree Tree_Zero = new AVLTree();
 
-
-    Tree_Zero.delete(100);
-    Tree_Zero.insert((int) (byte) 10);
-
-    Tree_Zero.insert((int) (short) 0);
-
+  @Test
+  public void test1()  throws Throwable  {
     try {
-      Tree_Zero.delete(10);
-      fail("Expecting null pointer exception");
-    }catch(NullPointerException ignored){
-
-    }
-  }
-
-  @Test(timeout = 4000)
-  public void test00() throws Throwable {
-    try {
-      AVLTree Tree_Zero = new AVLTree();
-      Tree_Zero.insert((-3240));
-      Tree_Zero.insert(1779);
-      Tree_Zero.delete(663);
-      Tree_Zero.insert(0);
-      Tree_Zero.insert((-791));
-      Tree_Zero.delete((-791));
-      AVLTree.Node Tree_Node0 = Tree_Zero.getRoot();
-      Tree_Zero.delete((-935));
-      AVLTree.Node Tree_Node1 = Tree_Node0.left;
-      Tree_Node0.left = Tree_Node1;
-      Tree_Zero.insert((-450));
-      Tree_Node0.left.key = (-1467);
-
-
-      Tree_Node1.height = (-935);
-
-      Tree_Node0.height = 663;
-      Tree_Node0.key = (-791);
-      Tree_Zero.insert(391);
-      Tree_Zero.getBalance(Tree_Node0);
-    }catch (NullPointerException ne){
+      AVLTree aVLTree0 = new AVLTree();
+      int int0 = 1;
+      aVLTree0.delete(1);
+      aVLTree0.insert(1);
+      AVLTree.Node aVLTree_Node0 = aVLTree0.find(1);
+      aVLTree_Node0.height = 1;
+      aVLTree_Node0.height = (-668);
+      aVLTree0.delete(111);
+      aVLTree0.delete((-668));
+      aVLTree_Node0.height = 1;
+      aVLTree0.delete(1487);
+      aVLTree0.height();
+      int int1 = aVLTree0.getBalance(aVLTree_Node0);
+      aVLTree_Node0.key = 1065;
+      AVLTree.Node aVLTree_Node1 = aVLTree0.getRoot();
+      aVLTree_Node0.right = aVLTree_Node1;
+      aVLTree0.delete(0);
+      aVLTree0.insert(int0);
+      int int2 = 0;
+      aVLTree0.insert(int2);
+      AVLTree.Node aVLTree_Node2 = aVLTree0.getRoot();
+      aVLTree0.find(int1);
+      int int3 = 0;
+      aVLTree_Node2.key = int3;
+      aVLTree0.height();
+      aVLTree0.getBalance(aVLTree_Node2);
+      int int4 = 5;
+      AVLTree.Node aVLTree_Node3 = aVLTree0.find(int4);
+      aVLTree_Node3.right = aVLTree_Node2;
+      aVLTree_Node3.key = int3;
+      aVLTree0.getBalance(aVLTree_Node3);
+      aVLTree0.height();
+      aVLTree0.getRoot();
+    }catch(Error error){
       fail("Failed");
-    }
-  }
-
-  @Test(timeout = 4000)
-  public void test009() throws Throwable {
-    AVLTree Tree_Zero = new AVLTree();
-    Tree_Zero.insert(10);
-    Tree_Zero.insert(50);
-    Tree_Zero.insert(22);
-    Tree_Zero.insert(80);
-    try {
-      Tree_Zero.delete(50);
-      Tree_Zero.delete(22);
-      Tree_Zero.delete(80);
-      fail("Null pointer exception");
-    }catch(NullPointerException ignored){
-
     }
   }
 }
